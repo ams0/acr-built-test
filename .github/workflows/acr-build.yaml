@@ -21,7 +21,7 @@ jobs:
         run: |
             az acr login --name ${{ secrets.registry }}
             pwd
-            ls -alF
+            ls -alF ..
       - name: ACR build
         id: acr
         uses: ams0/acr-build@removeazurelogin
