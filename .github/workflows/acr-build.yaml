@@ -1,5 +1,6 @@
 name: build_image
 on:
+  workflow_dispatch:
   push:
     paths:
       - "src/docker/**"
