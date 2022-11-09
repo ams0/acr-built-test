@@ -29,4 +29,3 @@ jobs:
           image: acr-build-test
           folder: src/docker
           branch: main
-          platform: windows
