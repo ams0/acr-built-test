@@ -20,7 +20,8 @@ jobs:
       - name: 'Run Azure CLI commands'
         run: |
             az acr login --name ${{ secrets.registry }}
-            ls .azure
+            pwd
+            ls -alF
       - name: ACR build
         id: acr
         uses: ams0/acr-build@removeazurelogin
